@@ -11,10 +11,6 @@ btn.addEventListener('click', () => {
 let slideIndex = 1;
 showSlides(slideIndex);
 
-// function currentSlide(n) {
-//     showSlides(slideIndex = n);
-// }
-
 const dots = document.querySelectorAll(".dot");
 
 console.log(dots)
@@ -22,7 +18,7 @@ var kounter = 1;
 dots.forEach(element => {
 
     element.addEventListener('click', (e) => {
-        console.log(e.currentTarget.dataset.id)
+        //console.log(e.currentTarget.dataset.id)
         showSlides(e.currentTarget.dataset.id)
     })
 
